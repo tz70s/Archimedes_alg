@@ -4,6 +4,7 @@
 int findGCDv1(int a,int b);
 int findGCDv2(int a,int b);
 int findGCDv3(int a,int b);
+int TurnGCD(int a,int b);
 
 float Benchmark(int bound , int type)
 {
@@ -18,6 +19,9 @@ float Benchmark(int bound , int type)
 			break;
 		case 3:
 			fp = findGCDv3;
+			break;
+		case 4:
+			fp = TurnGCD;
 			break;
 	}
 	float startTime = 0;
@@ -37,8 +41,13 @@ float Benchmark(int bound , int type)
 
 int main(void)
 {	
-	printf("v1:%f\n",Benchmark(9999,1));
-	printf("v2:%f\n",Benchmark(9999,2));
-	printf("v3:%f\n",Benchmark(9999,3));
+	int count;
+	for(count = 2;count<10000;count+=100)
+	{
+		printf("v1:%f\n",Benchmark(count,1));
+		printf("v2:%f\n",Benchmark(count,2));
+		printf("v3:%f\n",Benchmark(count,3));
+	}
+	//printf("v4:%f\n",Benchmark(9999,4));
 	return 0;
 }
