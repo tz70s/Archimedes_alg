@@ -14,7 +14,7 @@ int findGCDv3(int a , int b)
 		}
 		else if(a>=b)
 		{
-			a -= b;
+			a-=b;
 			if(a==0)
 				return a;
 			if(b==1)

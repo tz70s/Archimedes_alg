@@ -7,7 +7,7 @@ int findGCDv1(int a , int b)
 		if(a>b)
 			a-=b;
 		else if(a<b)
-			b -=a;
+			b-=a;
 		else 
 			return a;
 	}
