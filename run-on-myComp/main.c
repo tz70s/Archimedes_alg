@@ -29,8 +29,8 @@ float Benchmark(int bound , int type)
 	int v = 0;
 	int i,j;
 	int count = 0;
-	float average;
-	for(count =0;count<5;count++)
+	float average = 0;
+	for(count=0;count<10;count++)
 	{
 	startTime = (float)clock()/CLOCKS_PER_SEC;
 	for(i=2;i<bound;i++){
@@ -42,16 +42,14 @@ float Benchmark(int bound , int type)
 	endTime = (float)clock()/CLOCKS_PER_SEC;
 	average+=endTime-startTime;
 	}
-	return average/5;
+	return average/10;
 }
 
 int main(void)
 {	
-	int count = 9999;
-	//for(count = 2;count<10000;count+=100)
-	printf("v1:%f\n",Benchmark(count,1));
-	printf("v2:%f\n",Benchmark(count,2));
-	printf("v3:%f\n",Benchmark(count,3));
+	printf("v1:%f\n",Benchmark(9999,1));
+	printf("v2:%f\n",Benchmark(9999,2));
+	printf("v3:%f\n",Benchmark(9999,3));
 	printf("v4:%f\n",Benchmark(9999,4));
 	return 0;
 }
