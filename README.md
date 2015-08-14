@@ -11,6 +11,6 @@ make main qemu
 
 </br>
 if run-on-qemu program gets unexpected results</br>
-call the benchmark funciton foreach in main function</br>
+call the benchmark funciton for each one in main function</br>
 
 
