@@ -9,8 +9,8 @@
 ###
     make main qemu
 
-###
-    if run-on-qemu program gets unexpected results</br>
-    call the benchmark funciton for each one in main function</br>
+
+* if run-on-qemu program gets unexpected results
+*   call the benchmark funciton for each one in main function
 
 
