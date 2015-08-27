@@ -11,6 +11,6 @@
 
 
 * if run-on-qemu program gets unexpected results
-*   call the benchmark funciton for each one in main function
+    * call the benchmark funciton for each one in main function
 
 
